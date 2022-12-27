@@ -1,2 +1,1 @@
-# Frontend-Check
-For correction and connect urls and work with Djano
+# Check, correck and connect Urls which is uploaded by Aadithya in his repo
