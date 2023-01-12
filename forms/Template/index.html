@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% block title %}
+Single Release 
+{% endblock title %}
+{% block content %}
+{% load static %}
+  
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <div class="container">
+        <header>Single Release</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="Aritst-details">
+                    <span class="title">Artist Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Role</label>
+                            <select required>
+                                <option disabled selected>--select--</option>
+                                <option>Artist</option>
+                                <option>Main Artist</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Other role</label>
+                            <input type="text" placeholder="Enter your role" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Img">
+                    <span class="title">Image Details</span>
+
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type</label>
+                            <select required>
+                                <option disabled selected>--select--</option>
+                                <option>ISRC</option>
+                                <option>ICPN</option>
+                                <option>GRid</option>
+                                <option>Proprietary</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Identifier</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Warning</label>
+                            <input type="text" placeholder="Enter details" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Select file</label>
+                            <input type="file">
+                        </div>
+                    </div>
+                    <div class="Song">
+                        <span class="title">Song Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Id type</label>
+                                <select required>
+                                    <option disabled selected>--select--</option>
+                                    <option>ISRC</option>
+                                    <option>ICPN</option>
+                                    <option>GRid</option>
+                                    <option>Proprietary</option>
+                                </select>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Identifier</label>
+                                <input type="text" required>
+                            </div>
+
+                            <div class="input-field">
+                                <label>Name</label>
+                                <input type="text" required placeholder="Enter song name" >
+                            </div>
+                            <div class="input-field">
+                               <label>Pline Year</label>
+                               <input type="date" required>
+                            </div>
+                            <div class="input-field">
+                                <label>Pline Text</label>
+                                <input type="text" placeholder="Enter text here" required>
+                             </div>
+                             <div class="input-field">
+                                <label>Cline Year</label>
+                                <input type="date" required>
+                             </div>
+                             <div class="input-field">
+                                <label>Cline Text</label>
+                                <input type="text" placeholder="Enter text here" required>
+                             </div>
+                             <div class="input-field">
+                                <label>Genre</label>
+                                <input type="text" required>
+                             </div>
+                             <div class="input-field">
+                                <label>Sub Genre</label>
+                                <input type="text" required> 
+                             </div>
+                             <div class="input-field">
+                                <label>Duration</label>
+                                <input type="text" placeholder="(mm:ss)" required>
+                             </div>
+                        </div>
+                       
+                        <div class="Song">
+                            <span class="title">Clip Details</span>
+                            <div class="fields"> 
+                                <div class="input-field">
+                                    <label>Start time</label>
+                                    <input type="text" required placeholder="(mm:ss)">
+                                 </div>
+                                 <div class="input-field">
+                                    <label>Duration</label>
+                                    <input type="text" placeholder="(mm:ss)" required>
+                                 </div>
+                                 <div class="input-field">
+                                    <label>Type</label>
+                                    <input type="text" placeholder="File Format" required>
+                                 </div>
+                                 <div class="input-field">
+                                    <label>Song</label>
+                                    <select required>
+                                        <option disabled selected>--select--</option>
+                                    </select>
+                                 </div>
+
+                            </div>
+                        </div>           
+                    </div>
+
+                    <button class="SubmitBtn">
+                        <span class="btnText">Submit</span>
+                    </button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+  
+    {% endblock content %}
